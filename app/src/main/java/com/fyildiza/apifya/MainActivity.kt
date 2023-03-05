@@ -4,9 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.webkit.WebViewClient
 import com.fyildiza.apifya.databinding.ActivityMainBinding
-private lateinit var binding:ActivityMainBinding
-
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding= ActivityMainBinding.inflate(layoutInflater)
@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         binding.mwebview.loadUrl("https://www.dersinnova.com")
         val websetting= binding.mwebview.settings
 
-        //webview ayarlarımızı kullanabilmemiz için
+        //webview ayarlarımızı kullanabilmemiz içindir.
 
         websetting.builtInZoomControls=true
 
@@ -36,10 +36,4 @@ class MainActivity : AppCompatActivity() {
             binding.mwebview.goBack()
         super.onBackPressed()
     }
-
-
-
-
-
-
 }
