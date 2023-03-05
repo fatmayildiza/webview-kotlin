@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         binding.mwebview.loadUrl("https://www.dersinnova.com")
         val websetting= binding.mwebview.settings
 
-        //webview ayarlarımızı kullanabilmemiz içindir.
+        //webview ayarlarımızı kullanabilmemiz için.
 
         websetting.builtInZoomControls=true
 
